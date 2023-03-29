@@ -13,7 +13,7 @@
     background-size: 700px;
 }
 
-.row {
+.row-1{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -134,4 +134,7 @@ fieldset {
     margin-bottom: 200px;
     border-radius: 8px;  
     border: none;  
+}
+.row{
+display: flex;
 }
