@@ -5,19 +5,12 @@
     text-decoration: none;
   }
   
-/*   .fcc-btn:hover {
-    background-color: #223094;
-  }
-   */
 .fcc-btn {
   
   color: rgb(0, 133, 59);
   padding: 15px 25px;
   text-decoration: none;
 }
-/* .fcc-btn:hover {
-  background-color: #223094;
-} */
 
 
  .fcc-btn{
@@ -44,4 +37,15 @@
 
 .mb-3 input{
   width: 420px;
+}
+.row input{
+  width: 205px;
+}
+.DataNasc input{
+  width: 140px ;
+}
+.fcc-btn:hover{
+
+color: #FFBD00;
+
 }

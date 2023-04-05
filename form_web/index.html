@@ -8,14 +8,13 @@
     <title>EEEP Manoel Mano | Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="btn-style.css">
-    <!-- CSS only -->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-  crossorigin="anonymous"></script>
-<meta name="google-site-verification" content="ezTnfxOAOeXB6FaEOsqR0fcf63u74YI3CQX8biM0w7I" />
+    <meta name="google-site-verification" content="ezTnfxOAOeXB6FaEOsqR0fcf63u74YI3CQX8biM0w7I" />
+    <!-- Script para as Mascaras --> 
+    <script src="js/MaskInput.js"></script>
+    <!-- Favicon EEEP Manoel Mano -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logoMM.png">
+   
+  
 </head>
 <body>
     <div class="header">
@@ -47,46 +46,73 @@
                     <fieldset>
                     <legend>Dados Pessoais:</legend>
                     <div class="mb-3">
-                        <input type="text" class="form-control" class="col-01" placeholder="nome completo">
-                        <input type="text" class="form-control" class="col-01" placeholder="nome social">
+                        <input type="text" class="col-01" placeholder="Nome completo">
+                        <input type="text" class="col-01" placeholder="Nome Social">
                     </div>
                     <div class="row">
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="endereço" aria-label="endereço">
+                        <input type="text" placeholder="Endereço" aria-label="Endereço">
                         </div>
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="bairro" aria-label="bairro">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                        <input type="text" class="form-control" placeholder="município" aria-label="município">
-                        </div>
-                        <div class="col">
-                        <input type="text" class="form-control" placeholder="estado" aria-label="estado">
+                        <input type="text" placeholder="Bairro" aria-label="Bairro">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                        <input type="text" class="form-control" id="specificSizeInputName" placeholder="cpf: 000.000.000-00" maxlength="11">
+                        <input type="text" placeholder="Município" aria-label="Município">
+                        </div>
+                        <div class="col">
+                        <input type="text" placeholder="Estado" aria-label="Estado">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                        <input type="text"  placeholder="CPF: 000.000.000-00" maxlength="11" id="cpfInput"
+                        oninput="mascaraCpf('cpf')" required >
                     </div>
                     <div class="col">
-                        <input type="text"  placeholder="cep: 000.000.000-00" maxlength="11">
+                        <input type="text"  placeholder="CEP: 000.000.000-00" maxlength="8" id="cepInput"
+                        oninput="mascaraCep('cep')" required  >
                     </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                        <input type="date" name="" id="" class="form-control">
+                        <div class="DataNasc">
+                        <input type="date" name="" id="">
                     </div>
+                    <div class="col">
+                        <select name="" id="">
+              
+                          <option value="1">Masculino</option>
+                          <option value="2">Feminino</option>
+                          <option value="3">Outros</option>
+                          <option value="4" selected>Gênero</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select name="" id="">
+              
+                          <option value="1">Enfermagem</option>
+                          <option value="2">Informática</option>
+                          <option value="3">Comércio</option>
+                          <option value="4" >Administração</option>
+                          <option value="5" selected>Curso</option>
+                        </select>
+                      </div>
                     </div>
-                    <select class="form-control">
-                        <option selected>curso</option>
-                        <option value="1">Enfermagem</option>
-                        <option value="2">Informatica</option>
-                        <option value="3">Comercio</option>
-                        <option value="4">administração</option>
-                      </select>
+                  <!-- <div class="row">
+                   <div class="col">
+                    <select name="" id="">
+                        deficiencias
+                    </select>
+                   </div> -->
+                  </div>
+
+
+        
                      <!--  <input type = "date"> --> 
+                    
+                     
+                  
                     </fieldset>
                 </form>
             </div>
@@ -94,5 +120,6 @@
     </div>
     
         <footer><img src="./ondas-governo-rodape.png" alt=""></footer>
+        
 </body>
 </html>
