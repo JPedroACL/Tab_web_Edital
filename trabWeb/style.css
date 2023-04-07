@@ -46,8 +46,9 @@
 
 .formulario {
     
-    margin-top: 200px;
+    margin-top: 180px;
     justify-content: space-between;
+    display: inline-block;
 
 }
 
@@ -82,10 +83,12 @@ footer img{
     left: 0;
     bottom: 0;
     overflow: visible !important;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     width: 100%;
+
+
 }
 
 
@@ -97,6 +100,8 @@ background-color:rgba(0, 168, 74, 1);
  font-weight: bold;
  font-size: 20px;
  border: none;
- margin: 0 160px;
- 
+ margin: 0 60px;
+}
+.btn:hover{
+    background-color:rgb(5, 143, 65);
 }

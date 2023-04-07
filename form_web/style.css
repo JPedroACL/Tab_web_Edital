@@ -199,7 +199,6 @@ fieldset {
     background-color: #eeeeee75;
 }
 
-.row sele:focus-visible{
+.row select:focus-visible{
     outline: 1px solid #6c63ff;
 }
-
