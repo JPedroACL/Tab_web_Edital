@@ -202,3 +202,31 @@ fieldset {
 .row select:focus-visible{
     outline: 1px solid #6c63ff;
 }
+
+/* Tabela de notas*/
+
+table{
+    margin-top: 350px;
+    margin-left: 400px;
+    border-collapse: collapse;
+    width: 40%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+table th{
+    background: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+table td{
+    padding: 20px;
+    border-bottom: 1px solid #ddd ;
+    text-align: center;
+}
+table tr:hover{
+    background-color: #f5f5f5;
+}
