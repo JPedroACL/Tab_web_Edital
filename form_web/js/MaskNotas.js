@@ -8,9 +8,16 @@ function somenteNumeros(e) {
        var max = 5;
        var num = document.getElementById('num');           
             
-       if ((charCode < 48 || charCode > 57 && charCode != 188)||(num.value.length >= max)) {
-          return false;
-       }
+       if ((charCode < 48 || charCode > 57 || charCode == 44)) {
+        return true;
+
+        
+     }
+     if ((num.value.length >= max)) {
+      return false;
+      
+    }
        
     }
 }
+
