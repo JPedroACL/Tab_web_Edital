@@ -11,7 +11,7 @@
     <meta name="google-site-verification" content="ezTnfxOAOeXB6FaEOsqR0fcf63u74YI3CQX8biM0w7I" />
     <!-- Script para as Mascaras --> 
     <script src="js/MaskInput.js"></script>
-    <script src="js/MaskNotas.js"></script>
+<!--     <script src="js/MaskNotas.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Favicon EEEP Manoel Mano -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logoMM.png">
@@ -143,9 +143,10 @@
          <tr>
                     <td>Matemática</td>
 
-                    <!-- segue essa xereca ae, zé bct <3 -->
-                    <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="6AnoMatematica" id="6ano" required> </td>
-                    <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="7AnoMatematica" id="7ano" required> </td>
+                    <!-- repita esta porra aq <3 -->
+                    <td><input name="6Matematica"oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"type = "number" maxlength = "5" pattern="[0-9] + ([,\.][0-9]+)?"/></td>
+
+                    <td><input name="7Matematica"oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"type = "number" maxlength = "5" pattern="[0-9] + ([,\.][0-9]+)?"/></td>
                     <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="8AnoMatematica" id="8ano" required> </td>
                     <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="9AnoMatematica" id="9ano" required> </td>
                           
@@ -156,7 +157,7 @@
 
                 <tr>
                     <td>Português</td>
-                    <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="6AnoPortugues" id="6ano" required> </td>
+                    <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="6AnoPortugues" id="6AnoPortugues" required> </td>
                     <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="7AnoPortugues" id="7ano" required> </td>      
                      <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="8AnoPortugues" id="8ano" required> </td>
                     <td> <input id="num" type="number"  onkeypress="return somenteNumeros(event)" pattern="[0-9] + ([,\.][0-9]+)?" name="9AnoPortugues" id="9ano" required> </td>
