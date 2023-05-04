@@ -1,4 +1,4 @@
-function somenteNumeros(e) {
+/* function somenteNumeros(e) {
     var charCode = e.charCode ? e.charCode : e.keyCode;
     // charCode 8 = backspace   
     // charCode 9 = tab
@@ -19,5 +19,5 @@ function somenteNumeros(e) {
     }
        
     }
-}
+} */
 
