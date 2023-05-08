@@ -35,18 +35,26 @@
     margin-bottom: -150px;
 }
 
+
+
+/* INPUTS FORM */
 .mb-3 input{
-  width: 420px;
+  width: 720px;
 }
 .row input{
-  width: 205px;
+  width: 305px;
   
 }
+
+
+
+
 .DataNasc input{
-  width: 140px ;
+  width: 305px ;
 }
 .fcc-btn:hover{
 
 color: #FFBD00;
 
 }
+
